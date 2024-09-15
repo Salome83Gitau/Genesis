@@ -319,7 +319,6 @@ section {
     .navbar {
         flex-direction: row;
         align-items: flex-start;
-        gap: 0px;
     }
 
     .nav-links {
@@ -342,9 +341,24 @@ section {
         flex-direction: column;
         align-items: center;
     }
-  
 
+    .motto{
+        font-size: 1.5rem;
+
+    }
+    header {
+        width: 100%;
+        background-color: var(--navy-blue);
+        color: var(--white);
+        padding: 0; /* Remove padding */
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
     
+
+   
     
 }
 
