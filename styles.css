@@ -607,7 +607,10 @@ img {
         align-items: center;
     }
 
-    
+    .motto{
+        font-size: 1.5rem;
+
+    }
     
 }
 
