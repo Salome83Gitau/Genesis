@@ -371,6 +371,14 @@ observer.observe(section);
     // Attach the close function to the close button
     document.querySelector('.close-btn').addEventListener('click', closeAnnouncement);
 
+    navLinks.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+        navLinks.classList.remove('active');
+        burger.classList.remove('active');
+    }
+});
+
+
     </script>
 </body>
 <footer>Copyright &copy; school 2024</footer>
