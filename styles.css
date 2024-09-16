@@ -594,7 +594,7 @@ img {
         background-color: var(--navy-blue);
         display: none; /* Initially hidden */
         text-align: left;
-        padding: 20px; /* Padding to create space around links */
+        padding: 2px; /* Padding to create space around links */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
         z-index: 1000; /* Ensure it's above other elements */
         box-sizing: border-box; /* Ensure padding is included in the width */
