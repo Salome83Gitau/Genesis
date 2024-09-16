@@ -577,29 +577,68 @@ img {
 .close::before,
 .close::after {
     content: ''; /* Make sure these are empty */
-}
-
-/* Responsive Design */
+}/* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: row;
         align-items: flex-start;
+        position: relative; /* Ensure proper positioning for the burger menu */
     }
 
     .nav-links {
-        flex-direction: column;
-        display: none;
-        width: 100%;
-        text-align: left;
+        position: absolute;
+        top: 60px; /* Adjust to match header height */
+        right: 0;
+        width: 100%; /* Full width of the viewport */
         background-color: var(--navy-blue);
+        display: none; /* Initially hidden */
+        text-align: left;
+        padding: 20px; /* Padding to create space around links */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+        z-index: 1000; /* Ensure it's above other elements */
+        box-sizing: border-box; /* Ensure padding is included in the width */
     }
 
     .nav-links.active {
-        display: flex;
+        display: flex; /* Show when burger is clicked */
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Margin between links */
+        padding: 10px 0; /* Padding inside each link item */
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 15px;
+        color: var(--white);
+        text-decoration: none;
     }
 
     .burger {
         display: block;
+        cursor: pointer;
+    }
+
+    .burger .line1, .burger .line2, .burger .line3 {
+        width: 25px;
+        height: 3px;
+        background-color: var(--white);
+        margin: 5px 0;
+        transition: all 0.3s;
+    }
+
+    .burger.toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger.toggle .line2 {
+        opacity: 0;
+    }
+
+    .burger.toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
     }
 
     .card-container {
@@ -607,25 +646,10 @@ img {
         align-items: center;
     }
 
-    .motto{
+    .motto {
         font-size: 1rem;
-
     }
-   
-    header {
-        width: 100%;
-        background-color: var(--navy-blue);
-        color: var(--white);
-        padding: 0; /* Remove padding */
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-    }
-
-    
 }
-
 
 /* Footer */
 footer {
