@@ -822,6 +822,7 @@ footer {
     --background-color: #f4f4f4;
 }
 
+
 /* Announcement Styling */
 .announcement {
     position: fixed;
@@ -836,6 +837,40 @@ footer {
     opacity: 0;
     animation: curtainOpen 1s forwards ease-out; /* Curtain opening animation */
     border-left: 5px solid var(--yellow); /* Yellow left border */
+    max-width: 600px; /* Set a reasonable max width */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 80px; /* Adjust space for the close button */
+}
+
+/* Typewriter Animation */
+.typewriter {
+    overflow: hidden;
+    border-right: 2px solid var(--yellow); /* Yellow typewriter cursor */
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(40, end), blinkCursor 0.75s step-end infinite;
+    flex-grow: 1; /* Ensure the typewriter text takes up the remaining space */
+    margin-right: 20px; /* Space between text and close button */
+}
+
+/* Close Button Styling */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--white);
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+/* Close Button Hover */
+.close-btn:hover {
+    color: var(--yellow); /* Hover effect with yellow */
 }
 
 /* Curtain Opening Animation */
@@ -848,15 +883,6 @@ footer {
         opacity: 1;
         transform: scaleX(1);
     }
-}
-
-/* Typewriter Animation */
-.typewriter {
-    overflow: hidden;
-    border-right: 2px solid var(--yellow); /* Yellow typewriter cursor */
-    white-space: nowrap;
-    letter-spacing: 0.15em;
-    animation: typing 3.5s steps(40, end), blinkCursor 0.75s step-end infinite;
 }
 
 /* Typing Effect */
@@ -877,22 +903,6 @@ footer {
     to {
         border-right-color: transparent;
     }
-}
-
-/* Close Button Styling */
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 18px;
-    cursor: pointer;
-    color: var(--white);
-    font-weight: normal;
-    transition: color 0.3s ease;
-}
-
-.close-btn:hover {
-    color: var(--yellow); /* Hover effect with yellow */
 }
 
 /* Responsive Design */
