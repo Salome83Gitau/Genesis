@@ -622,9 +622,7 @@ img {
         left: 0;
         z-index: 1000;
     }
-    
 
-   
     
 }
 
@@ -756,9 +754,31 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-columns: auto, auto;
-    grid-template-areas: "contact-details  contact-details";
+    grid-template-areas: "contact-details  socials";
     gap: 20px;
-}:root {
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .contact-us {
+        grid-template-columns: 1fr; /* One column layout */
+        grid-template-areas: 
+            "contact-details"
+            "socials"; /* Stack socials below contact-details */
+    }
+
+    .contact-details, .socials {
+        text-align: center; /* Optional: Center the text */
+    }
+
+    .socials .icon {
+        display: inline-block;
+        margin: 10px;
+    }
+}
+
+
+:root {
     --navy-blue: #001f3f;
     --yellow: #ffcc00;
     --white: #ffffff;
