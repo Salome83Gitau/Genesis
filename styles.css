@@ -578,6 +578,8 @@ img {
 .close::after {
     content: ''; /* Make sure these are empty */
 }
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
@@ -650,6 +652,16 @@ img {
     .motto {
         font-size: 1rem;
     }
+
+    
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+
+
 }
 
 /* Footer */
