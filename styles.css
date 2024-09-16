@@ -577,7 +577,8 @@ img {
 .close::before,
 .close::after {
     content: ''; /* Make sure these are empty */
-}/* Responsive Design */
+}
+/* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: row;
