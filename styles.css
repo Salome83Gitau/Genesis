@@ -606,13 +606,13 @@ img {
     }
 
     .nav-links li {
-        margin: 10px 0; /* Margin between links */
-        padding: 10px 0; /* Padding inside each link item */
+        margin: 5px 0; /* Margin between links */
+        padding: 5px 0; /* Padding inside each link item */
     }
 
     .nav-links a {
         display: block;
-        padding: 15px;
+        padding: 5px;
         color: var(--white);
         text-decoration: none;
     }
