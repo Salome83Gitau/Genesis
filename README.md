@@ -1,6 +1,6 @@
 # Sheridan Preparatory School Website
 
-**Website Link:** [Sheridan Preparatory School](#)
+**Website Link:** [Sheridan Preparatory School](https://salome83gitau.github.io/Genesis/)
 
 ## Overview
 
