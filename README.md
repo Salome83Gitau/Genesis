@@ -44,17 +44,14 @@ For this project, I chose to create a website for an existing school named Sheri
 
 Here are some screenshots showcasing different sections of the Sheridan Preparatory School website:
 
-### 1. Homepage
+### 1.Book a Tour Popup
 ![Homepage Screenshot](https://github.com/Salome83Gitau/Genesis/blob/main/Screenshot%20(582).png)
 
-### 2. Curriculum Section
-![Curriculum Screenshot](screenshots/curriculum.png)
+### 2. Home  Section
+![Curriculum Screenshot](https://github.com/Salome83Gitau/Genesis/blob/main/Screenshot%20(583).png)
 
-### 3. Book a Tour Popup
-![Book a Tour Popup](screenshots/book-tour-popup.png)
-
-### 4. Virtual Tour Section
-![Virtual Tour Screenshot](screenshots/virtual-tour.png)
+### 3.  Contact us Section
+![Virtual Tour Screenshot](https://github.com/Salome83Gitau/Genesis/blob/main/Screenshot%20(584).png)
 
 ## Technologies Used
 
