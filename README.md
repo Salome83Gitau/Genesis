@@ -45,7 +45,7 @@ For this project, I chose to create a website for an existing school named Sheri
 Here are some screenshots showcasing different sections of the Sheridan Preparatory School website:
 
 ### 1. Homepage
-![Homepage Screenshot](screenshots/homepage.png)
+![Homepage Screenshot](https://github.com/Salome83Gitau/Genesis/blob/main/Screenshot%20(582).png)
 
 ### 2. Curriculum Section
 ![Curriculum Screenshot](screenshots/curriculum.png)
